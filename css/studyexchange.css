@@ -1,0 +1,40 @@
+.studyexchange{
+    background: linear-gradient(#507BED, #40D2F5);
+}
+.studyexchange a {
+    font-size: 20px;
+    font-family: '黑体';
+    font-weight: 700;
+    color: rgb(221, 243, 249);
+}
+.card-interflow{
+    width: 1150px;
+    height: 704px;
+    box-shadow: 0 0 5px lightgray;
+    margin: 29px auto;
+}
+.communication{
+    width: 870px;
+    height: 704px;
+}
+.header-row{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: '黑体';
+    color: gray;
+    background: #E8F1FB;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 10px;
+    width: 100%;
+}
+.header-row input{
+    width: 55px;
+    height: 20px;
+}
+.communication button{
+    background: #EB825B;
+    border: 0;
+    color: white;
+    padding: 0 5px;
+}

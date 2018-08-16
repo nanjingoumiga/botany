@@ -1,70 +1,107 @@
-.cover{
+.home {
+    background: linear-gradient(#507EED, #41CCF4);
+}
+
+.home a {
+    font-size: 20px;
+    font-family: '黑体';
+    font-weight: 700;
+    color: rgb(221, 243, 249);
+}
+
+.cover {
     margin-top: 5px;
     text-align: center;
 }
-.cover img{
+
+.cover video {
     height: 400px;
+    width: 1200px;
 }
-.content{
-    margin-top: 10px;
+
+.content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 20px auto;
+    width: 1180px;
 }
-.content .test{
-    width: 740px;
-    height: 270px;
-    box-shadow: 0 0 5px #EDEDED;
+
+.content .test {
+    width: 810px;
+    height: 286px;
+    border: 1px solid lightgray;
     background: white;
     padding: 14px 18px 31px 15px;
+    /* margin-left: 15px; */
 }
-.content .test .intro-title{
-    font-size: 20px;
-    color: #67A489;
-    font-weight: 700;
-    border-bottom: 1px solid gray;
+
+.content .test .intro-title {
+    font-size: 25px;
+    font-family: '黑体';
+    color: rgb(69, 144, 110);
+    /* font-weight: 700; */
+    border-bottom: 2px solid lightgray;
     padding-bottom: 14px;
     padding-left: 10px;
+    display: block;
 }
-.content .download{
-    width: 340px;
-    height: 270px;
-    box-shadow: 0 0 5px #EDEDED;
+
+.content .download {
+    width: 350px;
+    height: 286px;
+    border: 1px solid lightgray;
     background: white;
-    margin-left: 1%;
+    /* margin-right: 15px; */
 }
-.cell{
+
+.content .test .cell {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+    height: 184px;
+    width: 755px;
 }
-.cell .left{
-    width: 30%;
+
+.content .test .cell .left {
     margin-right: 3%;
+    height: 100%;
+    display: block;
 }
-.cell .left img{
-    width: 100%;
+
+.content .test .cell .left img {
+    width: 286px;
+    height: 175px;
 }
-.cell .right{
-    width: 70%;
+
+.content .test .cell .right {
+    height: 168px;
+    display: block;
 }
-.cell .right .intro{
-    width: 100%;
-    height: 150px;
-    font-size: 16px;
+
+.content .test .cell .right .intro {
+    width: 476px;
+    height: 100%;
+    font-size: 18px;
     font-weight: 700;
-    color: gray;
-    text-indent:2em;
-    overflow:hidden;
-    text-overflow:ellipsis;
-    /* white-space:nowrap; */
+    font-family: '黑体';
+    color: rgb(147, 147, 147);
+    text-indent: 2em;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
 }
-.download{
+
+.content .download {
     padding: 14px 14px 0 20px;
     zoom: 1;
 }
-.download::after{
+
+.content .download::after {
     content: ".";
     clear: both;
     display: block;
@@ -72,45 +109,96 @@
     font-size: 0;
     height: 0;
 }
-.download-title{
-    font-size: 20px;
-    color: #67A489;
-    font-weight: 700;
-    border-bottom: 1px solid gray;
+
+.content .download-title {
+    font-size: 25px;
+    color: rgb(69, 144, 110);
+    /* font-weight: 700; */
+    font-family: '黑体';
+    border-bottom: 2px solid lightgray;
     padding-bottom: 14px;
     padding-left: 10px;
+    width: 300px;
 }
-.download .cell{
-    width: 131px;
-    height: 85px;
-    float: left;
-    margin: 5px;
-    /* border-radius: 5px; */
+.content .download .cells-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.content .download .cells-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+.content .download .cell {
+    width: 145px;
+    height: 88px;
     cursor: pointer;
 }
-.download .computer{
+
+.content .download .computer {
     background-image: url('../NewImages/虚拟仿真程序下载按钮（蓝色）.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.download .vr{
+
+.content .download .vr {
     background-image: url('../NewImages/虚拟仿真程序下载按钮（紫红）.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.download .android{
+
+.content .download .android {
     background-image: url('../NewImages/虚拟仿真程序下载按钮（绿色）.png');
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.download .ios{
+
+.content .download .ios {
     background-image: url('../NewImages/虚拟仿真程序下载按钮（灰色）.png ');
-    background-size: cover;
+    background-size: 100% 100%;
 }
-.download .cell img{
-    width: 65%;
-    margin-left: 15px;
+
+.content .download .cells-top .computer img {
+    width: 73%;
+    margin: 13px 0 0 18px;
+    height: 63px;
 }
-.download .cell:nth-of-type(-n+2){
+.content .download .cells-top .vr img {
+    width: 73%;
+    margin: 13px 0 0 18px;
+    height: 63px;
+}
+.content .download .cells-bottom .android img {
+    width: 73%;
+    margin: 13px 0 0 18px;
+    height: 63px;
+}
+.content .download .cells-bottom .ios img {
+    width: 73%;
+    margin: 13px 0 0 18px;
+    height: 63px;
+}
+
+.content .download .cell img{
+    transition: all 0.1s;
+}
+
+.content .download .cell img:hover{
+    transform: scale(1.1);
+}
+
+.content .download .cells-top .computer {
+    margin: 20px 0px 10px 0;
+}
+.content .download .cells-top .vr{
+    margin: 20px 0px 10px 0;
+}
+.content .download .cells-bottom .android{
+    margin: 0px 0px 10px 0;
+}
+.content .download .cells-bottom .ios{
+    margin: 0px 0px 10px 0;
+}
+/* .content .download .cell:nth-of-type(2) {
     margin-top: 20px;
-}
-.download .cell:nth-of-type(2n-1){
-    margin-left: 20px;
-}
+} */

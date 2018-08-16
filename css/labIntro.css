@@ -1,39 +1,59 @@
+.labIntro{
+    background: linear-gradient(#507BED, #40D2F5);
+}
+.labIntro a {
+    font-size: 20px;
+    font-family: '黑体';
+    font-weight: 700;
+    color: rgb(221, 243, 249);
+}
 .content{
     /* margin: 30px 268px 152px 261px; */
-    width: 1060px;
-    margin: 30px auto;
+    width: 1200px;
+    margin: 0px auto;
     text-align: center;
 }
-h1{
-    font-size: 36px;
+.content h1{
+    font-size: 34px;
     font-family: '黑体';
     color: rgb(0, 0, 0);
+    /* font-weight: 700; */
+    margin-top: 25px;
 }
 .subtitle{
     font-size: 23px;
     font-weight: 700;
     font-family: '黑体';
     margin-top: 15px;
+    color: rgb(0, 0, 0);
+    width:580px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px auto;
+}
+.people{
+    text-align: left;
 }
 .time{
-    font-family: '新宋体';
-    margin-left: 10px;
+    font-family: '黑体';
+    margin-right: 65px;
+    text-align: right;
 }
-.words{
-    font-size: 23px;
+.paragraphs{
+    font-size: 22px;
     font-family: '新宋体';
-    font-weight: 700px;
-    margin-top: 25px;
+    font-weight: 700;
+    /* margin-top: 15px; */
     text-align:left;
     text-indent:2em;
-    letter-spacing:0.5px;
+    letter-spacing:3px;
+    display: inline-block;
+    color: #393939;
 }
-.keywords{
-    font-size: 23px;
-    font-family: '新宋体';
-    font-weight: 700px;
-    margin-top: 25px;
-    text-align:left;
-    text-indent:2em;
-    letter-spacing:0.5px;
+.paragraphs p{
+    line-height: 50px;
+}
+.paragraphs .words{
+
 }
